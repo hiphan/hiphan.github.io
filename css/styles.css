@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: block;
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    height: 100%;
+}
+
+.col-lg-1 {
+    width: 8.33%;
+} 
+
+.col-lg-2 {
+    width: 16.67%;
+} 
+
+.col-lg-3 {
+    width: 25%;
+} 
+
+.col-lg-4 {
+    width: 33.33%;
+} 
+
+.col-lg-5 {
+    width: 41.67%;
+} 
+
+.col-lg-6 {
+    width: 50%;
+} 
+
+.col-lg-7 {
+    width: 58.33%;
+} 
+
+.col-lg-8 {
+    width: 66.67%;
+} 
+
+.col-lg-9 {
+    width: 75%;
+} 
+
+.col-lg-10 {
+    width: 83.33%;
+} 
+
+.col-lg-11 {
+    width: 91.67%;
+} 
+
+.col-lg-12 {
+    width: 100%;
+} 
+
+.header{
+}
+
+#logo-img {
+    margin-left: 33.33%;
+    margin-right: 33.33%;
+}
+
+.nav {
+    background-color: darkgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.left-page .middle-page .right-page {
+    background-color: darkgray;
+}
+
+.left-page {
+    margin-left: 24%;
+}
+
+.middle-page {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 0px 1px;
+}
+
+.right-page {
+    margin-right: 16.67%;
+}
+
+a.page-button {
+    color: black;
+    text-align: center;
+}
+
+.content {
+    margin-top: 2.5%;
+}
+
+.profile {
+    # background-color: pink;
+    float: left;
+    margin-left: 8.33%;
+}
+
+.profile-picture {
+    display: block;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+}
+
+.social-media {
+    # background-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.ir {
+    display: block;
+    overflow: visible;
+    padding: 0 0 100%;
+    position: relative;
+    height: 0;
+    width: 100%;
+}
+
+.ir > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.social-media a, .social-media svg {
+    display: inline-block;
+}
+
+.social-media a {
+    position: relative;
+    height: 24px;
+    height: 2.4rem;
+    width: 24px;
+    width: 2.4rem;
+}
+
+.icon:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  }
+  
+.github {
+    color: #26d991;
+    fill: #26d991;
+}
+.github:hover {
+    background: #26d991;
+}
+
+.linkedin {
+    color: #2691d9;
+    fill: #2691d9;
+}
+.linkedin:hover {
+    background: #2691d9;
+}
+
+.personal-information {
+    # background-color: blue;
+    margin-left: 8.33%;
+    float: left;
+}
+  
