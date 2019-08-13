@@ -2,126 +2,65 @@
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
-    display: block;
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-    height: 100%;
 }
 
-.col-lg-1 {
-    width: 8.33%;
-} 
+.header {
 
-.col-lg-2 {
-    width: 16.67%;
-} 
-
-.col-lg-3 {
-    width: 25%;
-} 
-
-.col-lg-4 {
-    width: 33.33%;
-} 
-
-.col-lg-5 {
-    width: 41.67%;
-} 
-
-.col-lg-6 {
-    width: 50%;
-} 
-
-.col-lg-7 {
-    width: 58.33%;
-} 
-
-.col-lg-8 {
-    width: 66.67%;
-} 
-
-.col-lg-9 {
-    width: 75%;
-} 
-
-.col-lg-10 {
-    width: 83.33%;
-} 
-
-.col-lg-11 {
-    width: 91.67%;
-} 
-
-.col-lg-12 {
-    width: 100%;
-} 
-
-.header{
 }
 
-#logo-img {
-    margin-left: 33.33%;
-    margin-right: 33.33%;
+.header-image > #logo-img {
+    max-width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation {
+    margin-top: 1%;
 }
 
 .nav {
     background-color: darkgray;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.nav-link {
+    color: black;
+    text-align: center;
     border-radius: 10px;
 }
 
-.left-page .middle-page .right-page {
-    background-color: darkgray;
-}
-
-.left-page {
-    margin-left: 24%;
-}
-
-.middle-page {
-    border-style: solid;
-    border-color: black;
-    border-width: 0px 1px 0px 1px;
-}
-
-.right-page {
-    margin-right: 16.67%;
-}
-
-a.page-button {
-    color: black;
-    text-align: center;
+.nav-link:hover {
+    color: aquamarine;
+    background-color: black;
 }
 
 .content {
-    margin-top: 2.5%;
+    margin-top: 1%;
 }
 
-.profile {
-    # background-color: pink;
-    float: left;
-    margin-left: 8.33%;
+.profile-picture-box {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
 }
 
-.profile-picture {
-    display: block;
-    margin: auto;
-    height: 250px;
-    width: 250px;
+.profile-picture-box > .profile-picture {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0);
 }
 
 .social-media {
-    # background-color: red;
     display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5%;
@@ -181,11 +120,5 @@ a.page-button {
 }
 .linkedin:hover {
     background: #2691d9;
-}
-
-.personal-information {
-    # background-color: blue;
-    margin-left: 8.33%;
-    float: left;
 }
   
