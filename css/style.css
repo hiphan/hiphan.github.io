@@ -13,6 +13,7 @@ body {
 }
 
 .header-image > #logo-img {
+    align-content: center;
     max-width: 40%;
     display: block;
     margin-left: auto;
@@ -121,4 +122,41 @@ body {
 .linkedin:hover {
     background: #2691d9;
 }
-  
+
+.experience-type {
+    font-weight: bolder;
+}
+
+.job-list {
+    list-style: none;
+}
+
+.job-list > li::before {
+    content: "\2795";
+}
+
+.job-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.job-location {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.job-description {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.footer {
+    background-color: lightgray;
+}
+
+.footer > .last-update {
+    text-align: center;
+    font-size: 0.75em;
+    font-style: italic;
+}
