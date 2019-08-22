@@ -136,18 +136,18 @@ body {
 }
 
 .job-title {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
 }
 
 .job-location {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: normal;
     font-style: italic;
 }
 
 .job-description {
-    font-size: 0.8em;
+    font-size: 0.75em;
     font-weight: normal;
 }
 

@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hieu Phan's Projects</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -34,19 +36,69 @@
         </div>
 
         <div class="content container">
-            <h2>Projects</h2>
-            <ul> 
-                <li class="project-title">
-                    <a class="no-underline" href="https://github.com/hiphan/digit-recognition">Digit Recognizer</a>
-                    <a class="no-underline" id="competition-link" href="https://www.kaggle.com/c/digit-recognizer/overview">Link to competition</a>
-                </li>
-                <li class="project-title">
-                    <a class="no-underline" href="https://github.com/hiphan/titanic">Titanic: Learning from Disaster</a>
-                </li>
-                <li class="project-title">
-                    <a class="no-underline" href="https://github.com/hiphan/sudoku">Sudoku AI Solver</a>
-                </li>
-            </ul>
+            <div class="accordion" id="accordionProjects">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#projectOne" aria-expanded="true" aria-controls="projectOne">
+                                Neural Style Transfer
+                            </button>
+                        </h2>
+                    </div>
+                
+                    <div id="projectOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionProjects">
+                        <div class="card-body">
+                            Implementation of the Neural Style Transfer algorithm, which generates artistic imagery by combining the style and content of two different images.     
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#projectTwo" aria-expanded="false" aria-controls="projectTwo">
+                                Digit Recognizer
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="projectTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionProjects">
+                        <div class="card-body">
+                            Implementation of 6-layer neural network including 3 convolutional layers and 3 fully connected layers, which learns and classifies gray-scale hand-written digits in the MNIST dataset.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#projectThree" aria-expanded="false" aria-controls="projectThree">
+                                Titanic: Learning from Disaster
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="projectThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProjects">
+                        <div class="card-body">
+                            Implementations of different classifiers for the Titanic dataset.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#projectFour" aria-expanded="false" aria-controls="projectFour">
+                                Sudoku AI Solver
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="projectFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionProjects">
+                        <div class="card-body">
+                            Implementations of AI Solver for the Sudoku game using Minimum Remaining Values (MRV) heuristic.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
