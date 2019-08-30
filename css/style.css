@@ -151,6 +151,35 @@ body {
     font-weight: normal;
 }
 
+.project-title {
+    color: black;
+}
+
+.project-title:hover {
+    background-color: darkgrey;
+}
+
+.btn-link {
+    transition: transform 0.2s;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.project-link {
+
+}
+
+.project-link:link {
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
 .footer {
     background-color: lightgray;
 }
