@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif; 
-    background-image: linear-gradient(#FFA07A, #CD5C5C 100%);
+    background-image: linear-gradient(#FFA07A 10%, #CD5C5C 100%);
     overflow: hidden;
     font-size: 1em;
 }
