@@ -6,28 +6,242 @@
 
 body {
     font-family: 'Titillium Web', sans-serif; 
-    background-image: linear-gradient(#afeeee, #4682b4);
+    background-image: linear-gradient(#FFA07A, #CD5C5C 100%);
+    overflow: hidden;
 }
 
-div.page-menu {
+form.page-menu {
     position: fixed;
+    width: auto;
     top: 50%;
-    left: 90%;
+    left: 2.5%;
+    transform: translate(0, -50%);
     z-index: 10;
-    text-align: right;
+    white-space: nowrap;
 }
 
-span.circle {
-    height: 12.5px;
-    width: 12.5px;
-    border-radius: 50%;
-    background: black;
+[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"] + label {
+    position: relative;
     display: inline-block;
-    transform: translate(0, 20%);
-    margin-left: 10%;
+    cursor: pointer;
+    padding-left: 25px;
+    line-height: 15px;
+}
+
+[type="radio"] + label:before {
+    visibility: visible;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px lightgray solid;
+}
+
+[type="radio"] + label:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    background-color: white;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label {
+    visibility: hidden;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 div.page { 
     height: 100vh;
+    max-height: 100vh;
+    position: relative;
 }
 
+.scroll-button {
+    position: absolute;
+    height: 4%;
+    width: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-top: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-down-button {
+    top: 94%;
+}
+
+.scroll-up-button {
+    top: 0%;
+}
+
+.arrow-down {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    width: calc(1.4142 * 24px);
+    height: 24px;
+    margin-left: calc(-1.4142 * 12px);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transform: rotate(-22.5deg) skew(45deg);
+    transform: rotate(-22.5deg) skew(45deg);
+    -webkit-animation: fade 1.2s infinite;
+    animation: fade 1.2s infinite;
+}
+
+.arrow-down:nth-of-type(1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.arrow-down:nth-of-type(2) {
+    top: -60%;
+}
+
+.arrow-up {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: calc(1.4142 * 24px);
+    height: 24px;
+    margin-left: calc(-1.4142 * 12px);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    -webkit-transform: rotate(22.5deg) skew(-45deg);
+    transform: rotate(22.5deg) skew(-45deg);
+    -webkit-animation: fade 1.2s infinite;
+    animation: fade 1.2s infinite;
+}
+
+.arrow-up:nth-of-type(1) {
+    top: 110%;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.arrow-up:nth-of-type(2) {
+    top: 140%;
+}
+
+@-webkit-keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+div.row, div.experience-lists, .accordion {
+    padding-top: 10%;
+}
+
+img.profile-picture {
+    height: 40vh;
+    float: right;
+    margin-left: 5%;
+}
+
+button.send-email {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.email {
+    position: absolute;
+    left: 4%;
+}
+
+.social .fa {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.social .fa-linkedin {
+    font-size: 24px;
+    background-color: #007bb5;
+    color: white;
+}
+
+.social .fa-github {
+    font-size: 42px;
+    color: black;
+}
+
+a { 
+    color: darkblue;
+}
+
+a:hover {
+    color: darkblue;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #F8DEBD;
+}
+
+.card-header button.btn {
+    color: black;
+    text-decoration: none;
+}
+
+.card-header button.btn:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
