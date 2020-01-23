@@ -8,6 +8,7 @@ body {
     font-family: 'Titillium Web', sans-serif; 
     background-image: linear-gradient(#FFA07A, #CD5C5C 100%);
     overflow: hidden;
+    font-size: 1em;
 }
 
 form.page-menu {
@@ -84,7 +85,7 @@ div.page {
 .scroll-button {
     position: absolute;
     height: 4%;
-    width: 5%;
+    width: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     padding-top: 15px;
@@ -184,6 +185,14 @@ button.send-email {
     cursor: pointer;
 }
 
+.emails a {
+    color: black;
+}
+
+.emails a:hover {
+    color: black;
+}
+
 .email {
     position: absolute;
     left: 4%;
@@ -244,4 +253,28 @@ a:hover {
 
 button:focus {
     outline: none;
+}
+
+@media only screen and (max-device-height: 812px) {
+    body {
+        overflow: auto;
+    }
+
+    form.page-menu {
+        display: none;
+    }
+
+    button.scroll-button {
+        display: none;
+    }
+
+    div.page {
+        height: auto;
+        max-height: none;
+        margin-top: 5%;
+    }
+
+    .emails a:nth-of-type(1) {
+        display: none;
+    }
 }
