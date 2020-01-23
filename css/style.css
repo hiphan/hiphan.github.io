@@ -226,7 +226,7 @@ a:hover {
 }
 
 .card {
-    border: none;
+    border: 1px solid black;
 }
 
 .card-header {
