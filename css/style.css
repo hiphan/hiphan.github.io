@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Titillium Web', sans-serif; 
-    background-image: linear-gradient(#FFA07A 10%, #CD5C5C 100%);
+    background-image: linear-gradient(white, #CD5C5C 100%);
     overflow: hidden;
     font-size: 1em;
 }
@@ -42,9 +42,9 @@ form.page-menu {
     height: 15px;
     top: 0;
     left: 0;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: transparent;
-    border: 1px lightgray solid;
+    border: 1px black solid;
 }
 
 [type="radio"] + label:after {
@@ -55,7 +55,7 @@ form.page-menu {
     top: 0;
     left: 0;
     border-radius: 100%;
-    background-color: white;
+    background-color: black;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
