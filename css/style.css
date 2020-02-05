@@ -179,6 +179,19 @@ img.profile-picture {
     margin-left: 5%;
 }
 
+.my-location {
+    margin-left: 0.75%;
+}
+
+.my-location i {
+    font-size: 1.5em;
+}
+
+.my-location span {
+    position: absolute;
+    left: 4.1%;
+}
+
 button.send-email {
     background-color: transparent;
     border: none;
