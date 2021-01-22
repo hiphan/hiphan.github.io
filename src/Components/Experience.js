@@ -15,19 +15,19 @@ class Experience extends Component {
         		<ul className="list">
         			<li className="list-item">	
         				<h5>Machine Learning Engineering Intern</h5>
-        				<h6><span>Wonderlic, Inc. - Vernon Hills, IL (remote)</span><span className="duration">Sep 2020 - Dec 2020</span></h6>
+        				<h6><span><a target="_blank" rel="noreferrer" href="https://wonderlic.com/" className="company-name">Wonderlic, Inc.</a> - Vernon Hills, IL (remote)</span><span className="duration">Sep 2020 - Dec 2020</span></h6>
         				<div className="description">
 						</div>
         			</li>
         			<li className="list-item">	
         				<h5>Machine Learning Engineering Intern</h5>
-        				<h6><span>Bose Corp. - Framingham, MA (remote)</span><span className="duration">June 2020 - Aug 2020</span></h6>
+        				<h6><span><a target="_blank" rel="noreferrer" href="https://www.bose.com/en_us/index.html" className="company-name">Bose Corp.</a> - Framingham, MA (remote)</span><span className="duration">June 2020 - Aug 2020</span></h6>
         				<div className="description">
         				</div>
         			</li>
         			<li className="list-item">
         				<h5>Software Engineering Intern</h5>
-        				<h6><span>FPT Software - Hanoi, Vietnam</span><span className="duration">May 2017 - Aug 2017</span></h6>
+        				<h6><span><a target="_blank" rel="noreferrer" href="https://www.fpt-software.com/" className="company-name">FPT Software</a> - Hanoi, Vietnam</span><span className="duration">May 2017 - Aug 2017</span></h6>
         				<div className="description">
         				</div>
         			</li>
@@ -39,7 +39,7 @@ class Experience extends Component {
         		<ul className="list">
         			<li className="list-item">
         				<h5>Research Experience for Undergraduates (REU)</h5>
-        				<h6><span>SLANG Lab - Amherst, MA</span><span className="duration">June 2019 - Sep 2019</span></h6>
+        				<h6><span><a target="_blank" rel="noreferrer" href="http://slanglab.cs.umass.edu/" className="company-name">SLANG Lab</a> - Amherst, MA</span><span className="duration">June 2019 - Sep 2019</span></h6>
         				<div className="description">
         				</div>
         			</li>

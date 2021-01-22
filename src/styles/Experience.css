@@ -6,6 +6,16 @@
 	float: right;
 }
 
+.company-name {
+	color: black;
+}
+
+.company-name:hover {
+	color: black;
+	opacity: 0.5;
+	text-decoration: none;
+}
+
 .course-name {
 	margin-bottom: 1.25vh;
 }
