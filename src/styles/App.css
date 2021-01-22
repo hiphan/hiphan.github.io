@@ -1,0 +1,107 @@
+.sidebar { 
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.profile-picture-container {
+  height: 35vh;
+}
+
+.profile-picture {
+  display: block;
+  margin: 7.5vh auto auto auto;
+}
+
+.contact-container {
+  height: 20vh;
+}
+
+.contact-link {
+  font-size: 0.75vw !important;
+  color: black;
+}
+
+.contact-link:hover {
+  color: #c0c0c0;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.menu-container {
+  height: 30vh;
+}
+
+.nav-item {
+  padding-left: 2vw;
+}
+
+.nav-link {
+  font-size: 1.25vw;
+  color: black;
+  opacity: 1;
+}
+
+.nav-link:hover {
+  color: black;
+  opacity: 0.25;
+}
+
+.nav-link:hover .nav-text {
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-icon {
+  display: inline-block;
+  width: 1.8vw;
+}
+
+.selected-link {
+  color: #c0c0c0;
+}
+
+.selected-link .nav-text {
+  border-bottom: 2.5px solid #c0c0c0;
+}
+
+.social-container {
+  height: 10vh;
+  text-align: center;
+}
+
+.social {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 2.4vw;
+}
+
+.github {
+  color: black;
+}
+
+.github:hover {
+  color: black;
+  opacity: 0.5;
+}
+
+.linkedin {
+  color: #0976b4;
+}
+
+.linkedin:hover {
+  color: #0976b4;
+  opacity: 0.5;
+}
+
+.footer {
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75vw;
+  font-style: italic;
+}
