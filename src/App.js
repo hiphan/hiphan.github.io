@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Switch, Route, NavLink } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -45,7 +45,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <HashRouter>
         <Container fluid>
           <Row>
             <Col xs="2" id="sidebarColumn">
@@ -111,7 +111,7 @@ class App extends Component {
             </Col>
           </Row>
         </Container>
-      </Router>
+      </HashRouter>
     );
   }
 }
