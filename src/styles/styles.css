@@ -16,6 +16,10 @@
 }
 
 @media screen and (max-width: 767.98px) {
+	.content {
+		padding-top: 0;
+	}
+
 	.list {
 		padding: 0;
 	}
