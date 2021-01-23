@@ -25,17 +25,17 @@ class Home extends Component {
         		<ul className="list">
         			<li className="list-item">
         				<h5 className="institution">University of Massachusetts, Amherst</h5>
-        				<h6><span>Master of Science in Computer Science</span><span className="duration">Jan 2020 - present</span></h6>
+        				<h6><span className="degree">Master of Science in Computer Science</span><span className="duration">Jan 2020 - present</span></h6>
         				Awards/Honors:
-        				<ul> 
+        				<ul className="awards"> 
         					<li className="award">Bay State Fellowship</li>
         				</ul>
         			</li>
         			<li className="list-item">
         				<h5 className="institution">University of Massachusetts, Amherst</h5>
-        				<h6><span>Bachelor of Science in Computer Science and Statistics</span><span className="duration">Sep 2016 - Dec 2019</span></h6>
+        				<h6><span className="degree">Bachelor of Science in Computer Science and Statistics</span><span className="duration">Sep 2016 - Dec 2019</span></h6>
         				Awards/Honors:
-        				<ul>
+        				<ul className="awards">
         					<li className="award">Finalist for the Dean’s International Scholarship of College of Information and Computer Science</li>
         				</ul>
         			</li>

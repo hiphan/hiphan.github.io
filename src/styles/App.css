@@ -24,7 +24,7 @@
 
 .contact-link {
   font-size: 0.75vw !important;
-  color: black;
+  color: #c0c0c0 !important;
 }
 
 .contact-link:hover {
@@ -62,7 +62,7 @@
 }
 
 .selected-link {
-  color: #c0c0c0;
+  color: #c0c0c0 !important;
 }
 
 .selected-link .nav-text {
@@ -104,4 +104,93 @@
   text-align: center;
   font-size: 0.75vw;
   font-style: italic;
+}
+
+.main-content {
+  padding-top: 1.75vh;
+}
+
+.sidebar-button {
+  display: none;
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767.98px) {
+  .profile-picture-container {
+    height: 25vh;
+  }
+
+  .contact-container {
+    height: 17.5vh;
+  }
+
+  .contact-link {
+    font-size: 2.5vw !important;
+  }
+
+  .menu-container {
+    height: 20vh;
+  }
+
+  .nav-item {
+    padding-left: 4vw;
+  }
+
+  .nav-link {
+    font-size: 4.5vw;
+  }
+
+  .nav-link:hover {
+    color: #c0c0c0;
+    opacity: 1;
+  }
+
+  .nav-icon {
+    width: 6vw;
+  }
+
+  .selected-link .nav-text {
+    border-bottom: none !important;
+  }
+
+  .social-container {
+    height: 10vh;
+  }
+
+  .social {
+    font-size: 10vw;
+  }
+
+  .footer {
+    height: auto;
+    font-size: 2vw;
+  }
+
+  .main-content {
+    padding-top: 0;
+  }
+
+  .sidebar-button {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 2.5px;
+    padding-left: 1.75vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 500ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
+  }
 }

@@ -63,7 +63,7 @@ class Experience extends Component {
         		<ul className="list">
         			<li className="list-item">
         				<h5>Peer Tutor in Computer Science and Mathematics (CRLA Certified)</h5>
-        				<h6><span>Learning Resource Center - Amherst, MA</span><span className="duration">Sep 2017 - May 2019</span></h6>
+        				<h6><span><a target="_blank" rel="noreferrer" href="https://www.umass.edu/lrc/" className="company-name">Learning Resource Center</a> - Amherst, MA</span><span className="duration">Sep 2017 - May 2019</span></h6>
         			</li>
         		</ul>
         	</ListGroup.Item>

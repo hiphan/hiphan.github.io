@@ -10,3 +10,19 @@
 .list-item {
 	margin-bottom: 2vh;
 }
+
+.duration {
+	float: right;
+}
+
+@media screen and (max-width: 767.98px) {
+	.list {
+		padding: 0;
+	}
+
+	.duration {
+		font-style: italic;
+		float: none;
+		display: block;
+	}
+}

@@ -6,6 +6,10 @@
 	font-weight: bold;
 }
 
+.awards {
+	list-style-type: disc;
+}
+
 .award {
 	margin-top: 4px;
 }
