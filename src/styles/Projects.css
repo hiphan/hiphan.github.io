@@ -1,4 +1,9 @@
-.project {
-	color: salmon;
-	padding-bottom: 0 !important;
+.row {
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+.card {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
 }

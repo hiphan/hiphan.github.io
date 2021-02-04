@@ -109,7 +109,7 @@ class App extends Component {
                     </div>
 
                     <div className="footer">
-                      <p>Last updated on 01/21/2021.</p>
+                      <p>Last updated on 02/04/2021</p>
                     </div>
                   </Nav>
                 </Navbar.Collapse>

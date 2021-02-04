@@ -1,68 +1,78 @@
 import React, { Component } from 'react';
 
-import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import ProjectCard from './ProjectCard';
 
 import '.././styles/styles.css';
 import '.././styles/Projects.css';
 
 class Projects extends Component {
-  render() {
-    return (
-      <div className="content">
-        <ListGroup variant="flush" className="projects">
-        	<ListGroup.Item className="project">
-        		<h5>AR Sudoku Solver</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan">[Github]</a></p>
-        	</ListGroup.Item>
+    constructor(props) {
+        super(props);
+        this.state = { repos: {} };
+    }
 
-        	<ListGroup.Item className="project">
-        		<h5>CIFAR-10 Conditional GAN</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan">[Github]</a></p>
-        	</ListGroup.Item>
+    componentDidMount() {
+        fetch("https://api.github.com/users/hiphan/repos")
+          .then(response => response.json())
+          .then(function(data) {
+            let repos = {};
+            data.forEach(function(repo) {
+                repos[repo.html_url] = repo.pushed_at;
+            });
+            this.setState({ repos: repos});
+          }.bind(this));
+    }
 
-        	<ListGroup.Item className="project">
-        		<h5>Neural Stylometry</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/sharath/neural-stylometry">[Github]</a></p>
-        	</ListGroup.Item>
+    render() {
+        return (
+            <div className="content">
+                <Row className="card-row">
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="AR Sudoku Solver" link="https://github.com/hiphan" date={this.state.repos["https://github.com/hiphan"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="CIFAR-10 Conditional GAN" link="https://github.com/hiphan" date={this.state.repos["https://github.com/hiphan"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Neural Stylometry" link="https://github.com/sharath/neural-stylometry" date={this.state.repos["https://github.com/hiphan/"]} />
+                    </Col>
+                </Row>
 
-        	<ListGroup.Item className="project">
-        		<h5>Neural Style Transfer</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/maze-search">[Github]</a></p>
-        	</ListGroup.Item>
+                <Row className="card-row">
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Neural Style Transfer" link="https://github.com/hiphan/neural-style-transfer" date={this.state.repos["https://github.com/hiphan/neural-style-transfer"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Digit Recognizer" link="https://github.com/hiphan/digit-recognition" date={this.state.repos["https://github.com/hiphan/digit-recognition"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Titanic: Machine Learning from Disaster" link="https://github.com/hiphan/titanic" date={this.state.repos["https://github.com/hiphan/titanic"]} />
+                    </Col>
+                </Row>
 
-        	<ListGroup.Item className="project">
-        		<h5>Digit Recognizer</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/digit-recognition">[Github]</a></p>
-        	</ListGroup.Item>
+                <Row className="card-row">
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Easy Task" link="https://github.com/hiphan/easy-task" date={this.state.repos["https://github.com/hiphan/easy-task"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Zeus Bot" link="https://github.com/hiphan/weather-bot" date={this.state.repos["https://github.com/hiphan/weather-bot"]} />
+                    </Col>
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="Maze Search Visualization" link="https://github.com/hiphan/maze-search" date={this.state.repos["https://github.com/hiphan/maze-search"]} />
+                    </Col>
+                </Row>
 
-        	<ListGroup.Item className="project">
-        		<h5>Titanic: Machine Learning from Disaster</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/titanic">[Github]</a></p>
-        	</ListGroup.Item>
-
-        	<ListGroup.Item className="project">
-        		<h5>Easy Task</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/Easy-Task">[Github]</a></p>
-        	</ListGroup.Item>
-
-        	<ListGroup.Item className="project">
-        		<h5>Zeus Bot</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/weather-bot">[Github]</a></p>
-        	</ListGroup.Item>
-
-        	<ListGroup.Item className="project">
-        		<h5>Maze Search Visualization</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/maze-search">[Github]</a></p>
-        	</ListGroup.Item>
-
-        	<ListGroup.Item className="project">
-        		<h5>K-Means Clustering Visualization</h5>
-        		<p><a target="_blank" rel="noreferrer" href="https://github.com/hiphan/kmeans-clustering">[Github]</a></p>
-        	</ListGroup.Item>
-        </ListGroup>
-      </div>
-    );
-  }
+                <Row className="card-row">
+                    <Col xs={12} lg={4}>
+                        <ProjectCard title="K-Means Clustering Visualization" link="https://github.com/hiphan/kmeans-clustering" date={this.state.repos["https://github.com/hiphan/kmeans-clustering"]} />
+                    </Col>
+                </Row>
+            </div>
+        );
+    } 
 }
 
 export default Projects;
