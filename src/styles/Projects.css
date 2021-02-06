@@ -7,3 +7,8 @@
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 }
+
+.card-footer {
+	background-color: #485461; 
+	color: white;
+}

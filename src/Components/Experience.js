@@ -50,10 +50,10 @@ class Experience extends Component {
                 		<h2>Teaching Assistantships</h2>
                 		<ul className="list">
                 			<li className="list-item">
-                				<h6 className="course-name">COMPSCI 220: Programming Methodologies - Spring 2021</h6>
-                				<h6 className="course-name">COMPSCI 121: An Introduction to Problem Solving with Computerss - Fall 2020</h6>
-                				<h6 className="course-name">COMPSCI 240: Reasoning Under Uncertainty - Spring 2020</h6>
-                				<h6 className="course-name">COMPSCI 240: Reasoning Under Uncertainty (UCA) - Spring 2020</h6>
+                				<h6 className="course-name"><span>COMPSCI 220: Programming Methodologies</span><span className="duration">Spring 2021</span></h6>
+                				<h6 className="course-name"><span>COMPSCI 121: An Introduction to Problem Solving with Computers</span><span className="duration">Fall 2020</span></h6>
+                				<h6 className="course-name"><span>COMPSCI 240: Reasoning Under Uncertainty</span><span className="duration">Spring 2020</span></h6>
+                				<h6 className="course-name"><span>COMPSCI 240: Reasoning Under Uncertainty (UCA)</span><span className="duration">Spring 2020</span></h6>
                 			</li>
                 		</ul>
                 	</ListGroup.Item>
